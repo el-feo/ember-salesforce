@@ -101,7 +101,7 @@ var SalesforceAdapter = DS.Adapter.extend(Ember.Evented, {
 
   updateRecord: function (store, type, record) {
     var data = {};
-    debugger;
+
     var serializer = store.serializerFor(type.typeKey);
 
     serializer.serializeIntoHash(data, type, record, { includeId: true });
